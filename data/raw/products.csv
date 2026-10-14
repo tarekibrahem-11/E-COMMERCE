@@ -1,0 +1,15 @@
+name,category,brand,description,price,rating,stock
+ASUS ROG Strix G16,Laptop,ASUS,Powerful gaming laptop for programming AI and gaming,65000,4.8,10
+Dell XPS 15,Laptop,Dell,Premium laptop for programming machine learning and professional work,68000,4.7,8
+Lenovo Legion 5,Laptop,Lenovo,Gaming laptop with strong performance for programming and AI,59000,4.6,12
+Razer Blade 14,Laptop,Razer,Compact high performance laptop for gaming and development,70000,4.8,6
+MacBook Pro 14,Laptop,Apple,Professional laptop for software development and creative work,75000,4.9,7
+HP Victus 16,Laptop,HP,Affordable gaming laptop suitable for programming and everyday work,48000,4.5,15
+Samsung Galaxy S25,Smartphone,Samsung,Premium Android smartphone with powerful performance and camera,48000,4.8,14
+iPhone 16 Pro,Smartphone,Apple,Premium smartphone with advanced camera and powerful processor,65000,4.9,9
+Google Pixel 9,Smartphone,Google,Smartphone with excellent camera and clean Android experience,45000,4.7,11
+LG UltraGear Monitor,Monitor,LG,High refresh rate gaming monitor with excellent image quality,18000,4.6,10
+Logitech G Pro Keyboard,Keyboard,Logitech,Mechanical keyboard designed for gaming and programming,4500,4.7,20
+HyperX Cloud III,Headphones,HyperX,Gaming headset with clear audio and comfortable design,3500,4.6,18
+Logitech MX Master 3S,Mouse,Logitech,Wireless mouse designed for productivity programming and office work,4000,4.8,16
+Samsung T7 SSD,Storage,Samsung,Fast portable SSD for storing projects and large files,6000,4.7,22

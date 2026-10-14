@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Shopping & Commerce Agent</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- =====================================================
+             HEADER
+             ===================================================== -->
+
+        <header class="header">
+
+            <!-- LOGO -->
+            <div class="logo">
+
+                <span>🤖</span>
+
+                <div>
+                    <h1>AI Shopping</h1>
+                    <p>Commerce Agent</p>
+                </div>
+
+            </div>
+
+
+            <!-- SEARCH -->
+            <div class="search-box">
+
+                <input type="text" id="searchInput" placeholder="Search products...">
+
+                <button onclick="searchProducts()">
+                    🔍
+                </button>
+
+            </div>
+
+
+            <!-- CART -->
+            <button class="cart-button">
+
+                🛒 Cart
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+        </header>
+
+
+        <!-- =====================================================
+             MAIN
+             ===================================================== -->
+
+        <main class="main">
+
+
+            <!-- =================================================
+                 PRODUCTS SECTION
+                 ================================================= -->
+
+            <section class="products-section">
+
+
+                <!-- SECTION TITLE -->
+
+                <div class="section-title">
+
+                    <div>
+
+                        <h2>
+                            Products
+                        </h2>
+
+                        <p>
+                            Discover products recommended by AI
+                        </p>
+
+                    </div>
+
+
+                    <!-- CATEGORY FILTER -->
+
+                    <select id="categoryFilter">
+
+                        <option value="">
+                            All Categories
+                        </option>
+
+                        <option value="Laptop">
+                            Laptops
+                        </option>
+
+                        <option value="Smartphone">
+                            Smartphones
+                        </option>
+
+                        <option value="Monitor">
+                            Monitors
+                        </option>
+
+                        <option value="Headphones">
+                            Headphones
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- PRODUCTS -->
+
+                <div id="productsContainer" class="products-grid">
+
+                    <!-- Products will be loaded by JavaScript -->
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 AI ASSISTANT
+                 ================================================= -->
+
+            <aside class="ai-panel">
+
+
+                <!-- =================================================
+                     AI HEADER
+                     ================================================= -->
+
+                <div class="ai-header">
+
+
+                    <!-- AI AVATAR -->
+
+                    <div class="ai-avatar">
+                        🤖
+                    </div>
+
+
+                    <!-- AI INFO -->
+
+                    <div>
+
+                        <h2>
+                            AI Assistant
+                        </h2>
+
+                        <span class="online">
+                            ● Online
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     CHAT MESSAGES
+                     ================================================= -->
+
+                <div id="chatMessages" class="chat-messages">
+
+
+                    <!-- INITIAL AI MESSAGE -->
+
+                    <div class="message ai-message">
+
+
+                        <!-- MESSAGE ICON -->
+
+                        <div class="message-icon">
+                            🤖
+                        </div>
+
+
+                        <!-- MESSAGE CONTENT -->
+
+                        <div class="message-content">
+
+                            <p>
+                                Hi! I'm your AI Shopping Assistant.
+                            </p>
+
+                            <p>
+                                Tell me what you're looking for and
+                                I'll help you find the best products.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     CHAT AREA
+                     =================================================
+
+                     مهم:
+                     الـTools والـInput بقوا جوه chat-area
+                     عشان نتحكم في مكانهم مع بعض.
+                     ================================================= -->
+
+                <div class="chat-area">
+
+
+                    <!-- =================================================
+                         AI TOOLS
+                         ================================================= -->
+
+                    <div class="ai-tools">
+
+
+                        <!-- COMPARE -->
+
+                        <button onclick="compareProducts()">
+
+                            ⚖️
+
+                            <span>
+                                Compare
+                            </span>
+
+                        </button>
+
+
+                        <!-- SEMANTIC SEARCH -->
+
+                        <button onclick="semanticSearch()">
+
+                            🔍
+
+                            <span>
+                                Semantic Search
+                            </span>
+
+                        </button>
+
+
+                        <!-- RAG -->
+
+                        <button onclick="askRAG()">
+
+                            📚
+
+                            <span>
+                                RAG
+                            </span>
+
+                        </button>
+
+
+                        <!-- ORDERS -->
+
+                        <button onclick="showOrders()">
+
+                            📦
+
+                            <span>
+                                Orders
+                            </span>
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         CHAT INPUT
+                         ================================================= -->
+
+                    <div class="chat-input">
+
+
+                        <!-- MESSAGE INPUT -->
+
+                        <input id="chatInput" type="text" placeholder="Type a message..." onkeydown="handleChat(event)">
+
+
+                        <!-- SEND BUTTON -->
+
+                        <button onclick="sendMessage()">
+                            ➤
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </main>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>
