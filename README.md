@@ -98,10 +98,5 @@ The AI component uses the Google Gemini API to generate responses. The RAG compo
 - Introduce evaluation metrics for semantic search and AI-generated responses.
 - Improve scalability and deployment readiness.
 
-## Disclaimer
-
-This project is developed for learning and portfolio purposes. AI-generated responses and search results depend on the available product data, retrieval quality, and the behavior of the integrated language model.
-
----
 
 <img width="1891" height="899" alt="image" src="https://github.com/user-attachments/assets/459533a6-62b7-43d9-b43a-1608c697748c" />
