@@ -104,4 +104,4 @@ This project is developed for learning and portfolio purposes. AI-generated resp
 
 ---
 
-**Developed as an AI engineering portfolio project.**
+<img width="1891" height="899" alt="image" src="https://github.com/user-attachments/assets/459533a6-62b7-43d9-b43a-1608c697748c" />
